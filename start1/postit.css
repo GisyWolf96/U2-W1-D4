@@ -1,0 +1,178 @@
+html,
+body {
+    height: 100%;
+    font-family: "Indie Flower", cursive;
+    background-color: rgb(102, 102, 102);
+}
+
+body {
+    margin: 20px auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.2em;
+    padding-top: 0.5em;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.container div {
+    margin: 1.2em;
+    display: flex;
+    justify-content: center;
+}
+
+.postitone,
+.postittwo,
+.postitthree,
+.postitfour,
+.postitfive,
+.postitsix,
+.postitseven,
+.postiteight {
+    height: 150px;
+}
+
+.postittwo,
+.postitthree,
+.postitfour,
+.postitfive,
+.postitsix,
+.postitseven,
+.postiteight {
+    width: 200px;
+}
+
+.positone {
+    width: 210px;
+}
+
+.positone,
+.positfive,
+.positseven {
+    background: linear-gradient( 0deg, rgba(189, 189, 163, 1) 0%, rgba(251, 251, 201, 1) 100%);
+    transform: rotate(-8deg);
+    box-shadow: 11px 10px 11px -6px rgba(0, 0, 0, 0.64);
+    animation: postAnimation1 2s backwards;
+}
+
+.postittwo,
+.postitfour,
+.postiteight {
+    background: linear-gradient( 0deg, rgba(158, 182, 160, 1) 0%, rgba(211, 248, 207, 1) 100%);
+    box-shadow: 11px 10px 11px -6px rgba(0, 0, 0, 0.64);
+}
+
+.postitthree,
+.postitsix {
+    background: linear-gradient( 0deg, rgb(138, 140, 153) 0%, rgb(198, 197, 237) 100%);
+    transform: rotate(-10deg);
+    box-shadow: 11px 10px 11px -6px rgba(0, 0, 0, 0.64);
+    animation: postAnimation2 2s backwards;
+}
+
+.postittwo,
+.postiteight {
+    transform: rotate(10deg);
+    animation: postAnimation3 2s backwards;
+}
+
+.postitfour {
+    transform: rotate(12deg);
+    animation: postAnimation4 2s backwards;
+}
+
+#postit:hover {
+    transform: rotate(0deg) scale(1.3);
+    z-index: 1;
+}
+
+@keyframes postitAnimation1 {
+    0% {
+        opacity: 0;
+        transform: scale(10);
+    }
+    25% {
+        opacity: 0.5;
+        transform: scale(8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1) rotate(-8deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(-8deg);
+    }
+}
+
+@keyframes postitAnimation2 {
+    0% {
+        opacity: 0;
+        transform: scale(10);
+    }
+    25% {
+        opacity: 0.5;
+        transform: scale(8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1) rotate(-10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(-10deg);
+    }
+}
+
+@keyframes postitAnimation3 {
+    0% {
+        opacity: 0;
+        transform: scale(10);
+    }
+    25% {
+        opacity: 0.5;
+        transform: scale(8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1) rotate(10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(10deg);
+    }
+}
+
+@keyframes postitAnimation4 {
+    0% {
+        opacity: 0;
+        transform: scale(10);
+    }
+    25% {
+        opacity: 0.5;
+        transform: scale(8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1) rotate(12deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(12deg);
+    }
+}
